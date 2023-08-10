@@ -16,24 +16,24 @@ const MovieBox =({title, poster_path, vote_average, release_date, overview})=>{
             <div className='card-body'>
                 <img className='card-img-top' src={API_IMG+poster_path}></img>
             <div className='card-body view'>
-                <button type='button' className='btn btn-dark viewmore' onClick={handleShow}>View More</button>
+                <button type='button' className='btn btn-dark viewmore' onClick={handleShow}>Overview</button>
 
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title></Modal.Title>
                     </Modal.Header>
 
-                    <Modal.Body>
+                    <Modal.Body style={{ backgroundColor: "rgb(12, 2, 36)", color: "white", opacity:"0.8"}}>
                         <img className='card-img-top gamview' style={{width:'14rem'}} src={API_IMG+poster_path}></img>
                         <h3>{title}</h3>
                         <h4>Rate : <span>{vote_average}</span></h4>
                         <h5>Release Date : {release_date}</h5>
                         <br></br>
-                        <h6>Overview : </h6>
+                        <h6>Sipnosis: </h6>
                         <p>{overview}</p>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>Close</Button>
+                        <Button variant="secondary" onClick={handleClose}>close</Button>
                     </Modal.Footer>
                 </Modal>
             </div>

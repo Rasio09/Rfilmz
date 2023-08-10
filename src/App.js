@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-    <Navbar bg="black" expand="lg" variant="dark">
+    <Navbar bg="black" expand="lg" variant="dark" style={{ opacity: "0.7" }}>
     <Container fluid>
       <Navbar.Brand href="/home">
         <div className='tag-name'>RFilmz</div></Navbar.Brand>
@@ -83,7 +83,7 @@ function App() {
         </div>
       </div>
         ):(
-          <h2>Sorry Movies Not Found !!</h2>
+          <h2>MOVIE NOT FOUND 404</h2>
         )}
 
     </div>
