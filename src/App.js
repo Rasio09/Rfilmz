@@ -43,7 +43,7 @@ function App() {
 
   return (
     <>
-    <Navbar bg="black" expand="lg" variant="dark" style={{ opacity: "0.7" }}>
+    <Navbar bg="black" expand="lg" variant="dark" style={{ opacity: "0.7" }} className='navbar fixed-top'>
     <Container fluid>
       <Navbar.Brand href="/home">
         <div className='tag-name'>RFilmz</div></Navbar.Brand>
