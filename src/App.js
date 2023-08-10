@@ -87,6 +87,10 @@ function App() {
         )}
 
     </div>
+
+    <div style={{ width:"100%", height:"50px", backgroundColor:"rgb(12, 2, 36)", opacity:0.8, paddingTop:"0.6px"}}>
+      <p style={{ textAlign:"center", color:"white", marginTop:"20px" }}>Rfilmz v.1</p>
+    </div>
     </>
   );
 }
